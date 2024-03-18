@@ -1,0 +1,142 @@
+<resources>
+    <string name="app_name">DinoPedia</string>
+    <string name="info_name_family">Nama Family</string>
+    <string name="info_image_family">Image Family</string>
+    <string name="info_deskripsi_family">Deskripsi Family</string>
+    <string name="info_periode_family">Periode Family</string>
+    <string name="info_karakteristik_family">Karakteristik Family</string>
+    <string name="info_habitat_family">Habitat Family</string>
+    <string name="info_perilaku_family">Perilaku Family</string>
+    <string name="info_klasifikasi_family">Klasifikasi Family</string>
+    <string name="info_thero_button">Lihat Dino</string>
+
+
+    <string-array name="nama_dino_family">
+        <item>Theropoda</item>
+        <item>Sauropodomorpha</item>
+        <item>Ornithopoda</item>
+        <item>Stegosauria</item>
+        <item>Ankylosauria</item>
+        <item>Ceratopsia</item>
+        <item>Pterosauria</item>
+        <item>Hadrosauridae</item>
+    </string-array>
+
+    <string-array name="image_dino_family">
+        <item>@drawable/theropods_family</item>
+        <item>@drawable/sauro_family</item>
+        <item>@drawable/ornit_family</item>
+        <item>@drawable/stego_family</item>
+        <item>@drawable/anky_family</item>
+        <item>@drawable/ceratop_family</item>
+        <item>@drawable/ptero_family</item>
+        <item>@drawable/hadro_family</item>
+    </string-array>
+
+
+    <string-array name="deskripsi_dino_family">
+        <item>Theropoda adalah kelompok dinosaurus karnivora bipedal yang mencakup beberapa spesies terkenal seperti Tyrannosaurus rex, Velociraptor, dan Spinosaurus. Mereka memiliki tubuh yang ramping dengan kepala yang besar, kaki yang kuat, dan cakar tajam.</item>
+        <item>Sauropodomorpha adalah dinosaurus bertubuh besar dengan leher panjang dan ekor besar, termasuk Brachiosaurus, Diplodocus, dan Apatosaurus. Mereka merupakan herbivora dengan gigi yang cocok untuk mengunyah tanaman.</item>
+        <item>Ornithopoda adalah dinosaurus herbivora bipedal atau quadrupedal yang memiliki ciri khas paruh seperti burung, seperti Iguanodon dan Hadrosaurus.</item>
+        <item>Stegosauria adalah dinosaurus bertubuh besar dengan ciri khas punggung berderetkan paku, seperti Stegosaurus.</item>
+        <item>Ankylosauria adalah dinosaurus bertubuh besar dengan kulit tebal dan bercakar, serta dilengkapi dengan perisai di punggungnya, seperti Ankylosaurus dan Euoplocephalus.</item>
+        <item>Ceratopsia adalah dinosaurus herbivora dengan ciri khas tanduk dan lempeng di tengkorak, seperti Triceratops dan Styracosaurus.</item>
+        <item>Pterosauria adalah kelompok reptil terbang yang hidup selama periode dinosaurus, seperti Pteranodon dan Quetzalcoatlus. Mereka tidak termasuk dalam kelasifikasi Dinosaurus secara langsung, tetapi hidup bersama-sama dengan mereka.</item>
+        <item>Hadrosauridae adalah kelompok dinosaurus herbivora yang terkenal dengan rahang bercakar dan gigi berbentuk pipa, seperti Parasaurolophus dan Edmontosaurus.</item>
+    </string-array>
+
+    <string-array name="periode_dino_family">
+        <item>Hidup selama periode Jurasik dan Kretaseus.</item>
+        <item>Hidup selama periode Trias hingga Kretaseus.</item>
+        <item>Hidup selama periode Jurasik hingga Kretaseus.</item>
+        <item>Hidup selama periode Jurasik.</item>
+        <item>Hidup selama periode Jurasik hingga Kretaseus.</item>
+        <item>Hidup selama periode Kapur Akhir.</item>
+        <item>Hidup selama periode Jurasik hingga Kretaseus.</item>
+        <item>Hidup selama periode Kapur Akhir.</item>
+    </string-array>
+
+    <string-array name="karakteristik_dino_family">
+        <item>Tubuh kecil hingga besar, gigi bergerigi tajam, cakar kaki yang kuat, dan kaki yang beradaptasi untuk berlari.</item>
+        <item>Tubuh besar dengan leher panjang, ekor besar, dan kaki yang kuat. Mereka memiliki gigi pegun.</item>
+        <item>Tubuh kecil hingga besar, ciri khas paruh seperti burung, gigi yang cocok untuk mengunyah tanaman, dan kaki yang cocok untuk berjalan atau berlari.</item>
+        <item>Tubuh besar dengan punggung berderetkan paku dan ekor bersenjatakan duri atau paku.</item>
+        <item>Tubuh besar dengan kulit tebal yang dilindungi oleh perisai dan duri, serta cakar yang kuat.</item>
+        <item>Tubuh besar dengan tanduk di kepala dan lempeng-kepala yang besar di tengkorak.</item>
+        <item>Tubuh dengan sayap membran yang memungkinkan terbang, leher panjang, dan tanduk di kepala.</item>
+        <item>Tubuh besar dengan rahang bercakar dan gigi berbentuk pipa untuk mengunyah tanaman, serta kaki yang cocok untuk berjalan atau berlari.</item>
+    </string-array>
+
+    <string-array name="habitat_dino_family">
+        <item>Beragam, termasuk daratan, hutan, dan dataran rendah.</item>
+        <item>Umumnya hidup di daratan datar, daerah rawa, dan hutan berair.</item>
+        <item>Umumnya ditemukan di padang rumput, hutan, dan dataran banjir.</item>
+        <item>Biasanya hidup di dataran rendah atau hutan terbuka.</item>
+        <item>Biasanya ditemukan di daerah daratan datar atau hutan terbuka.</item>
+        <item> Umumnya ditemukan di daerah dataran tinggi atau dataran rendah yang luas.</item>
+        <item>Pterosauria umumnya ditemukan di daerah pesisir, danau, atau sungai yang luas.</item>
+        <item>Umumnya ditemukan di dataran banjir atau daerah rawa yang luas.</item>
+    </string-array>
+
+    <string-array name="perilaku_dino_family">
+        <item>Theropoda umumnya dikenal sebagai pemburu aktif yang berburu dalam kelompok kecil atau sendirian. Beberapa mungkin juga memiliki perilaku kanibalisme.</item>
+        <item>Sauropodomorpha umumnya adalah hewan herbivora yang menjalani kehidupan sebagai pemakan tumbuhan besar, sering kali mengonsumsi banyak tanaman dalam jumlah besar.</item>
+        <item>Ornithopoda sering hidup dalam kawanan besar untuk melindungi diri dari pemangsa dan mencari makanan bersama-sama.</item>
+        <item>Mungkin memiliki perilaku pertahanan diri dengan menggunakan punggungnya untuk menakuti pemangsa.</item>
+        <item>Mungkin memiliki perilaku pertahanan diri dengan menggunakan perisai dan duri di tubuhnya.</item>
+        <item>Ceratopsia mungkin memiliki perilaku defensif, menggunakan tanduknya untuk mempertahankan diri dari pemangsa.</item>
+        <item> Mereka merupakan predator udara yang mencari mangsa seperti ikan dan hewan kecil di sekitar perairan.</item>
+        <item>Hadrosauridae mungkin hidup dalam kawanan besar untuk melindungi diri dari pemangsa dan mencari makanan bersama-sama.</item>
+    </string-array>
+
+    <string-array name="klasifikasi_dino_family">
+        <item>Kelasifikasi tergantung pada spesies tertentu, tetapi mereka masuk ke dalam ordo Saurischia dan subkelompok Theropoda.</item>
+        <item>Kelasifikasi mereka termasuk dalam ordo Saurischia dan subkelompok Sauropodomorpha.</item>
+        <item>Kelasifikasi mereka termasuk dalam ordo Ornithischia dan subkelompok Ornithopoda.</item>
+        <item>Kelasifikasi mereka termasuk dalam ordo Ornithischia dan subkelompok Stegosauria.</item>
+        <item>Kelasifikasi mereka termasuk dalam ordo Ornithischia dan subkelompok Ankylosauria.</item>
+        <item>Kelasifikasi mereka termasuk dalam ordo Ornithischia dan subkelompok Ceratopsia.</item>
+        <item>Kelasifikasi mereka termasuk dalam ordo Pterosauria, terpisah dari dinosaurus, tetapi mereka merupakan rekan se-ekosistem dari dinosaurus.</item>
+        <item>Kelasifikasi mereka termasuk dalam ordo Ornithischia dan subkelompok Hadrosauridae.</item>
+    </string-array>
+
+
+    <string-array name="nama_Theropoda">
+        <item>Tyrannosaurus</item>
+        <item>Velociraptor</item>
+    </string-array>
+    <string-array name="deskripsi_Theropoda">
+        <item> Salah satu dinosaurus karnivora terbesar dan paling terkenal, dengan rahang besar dan gigi tajam.</item>
+        <item> Dinosaurus theropoda yang kecil dan lincah, dengan cakar yang mematikan dan otak yang cerdas.</item>
+    </string-array>
+    <string-array name="kelompok_Theropoda">
+        <item>Theropoda</item>
+        <item>Theropoda</item>
+    </string-array>
+    <string-array name="habitat_Theropoda">
+        <item> Biasanya ditemukan di dataran datar dan hutan tropis.</item>
+        <item>Umumnya ditemukan di dataran rendah dan hutan terbuka.</item>
+    </string-array>
+    <string-array name="makanan_Theropoda">
+        <item>Karnivora, memakan hewan-hewan besar seperti Triceratops dan hadrosaur.</item>
+        <item> Karnivora, memburu mangsa dalam kelompok kecil.</item>
+    </string-array>
+    <string-array name="panjang_Theropoda">
+        <item>Sekitar 12-13 meter.</item>
+        <item>Sekitar 2 meter.</item>
+    </string-array>
+    <string-array name="tinggi_Theropoda">
+        <item>Sekitar 4-6 meter.</item>
+        <item>Sekitar 0.5 meter.</item>
+    </string-array>
+    <string-array name="bobot_Theropoda">
+        <item>Sekitar 7-9 ton.</item>
+        <item>Sekitar 15-20 kilogram.</item>
+    </string-array>
+    <string-array name="kelemahan_Theropoda">
+        <item>Kecepatan berlari yang terbatas, mungkin rentan terhadap serangan dari jarak jauh.</item>
+        <item>Ukuran tubuh yang kecil dapat membuatnya rentan terhadap serangan dinosaurus yang lebih besar.</item>
+    </string-array>
+
+
+</resources>
