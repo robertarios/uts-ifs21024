@@ -4,7 +4,7 @@ import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
 
 @Parcelize
-data class Thero(
+data class Dino(
     var name: String,
     var image: Int,
     var deskripsi: String,

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">DinoPedia</string>
+    <string name="app_name">Dino Pedia</string>
     <string name="info_name_family">Nama Family</string>
     <string name="info_image_family">Image Family</string>
     <string name="info_deskripsi_family">Deskripsi Family</string>
@@ -8,7 +8,21 @@
     <string name="info_habitat_family">Habitat Family</string>
     <string name="info_perilaku_family">Perilaku Family</string>
     <string name="info_klasifikasi_family">Klasifikasi Family</string>
-    <string name="info_thero_button">Lihat Dino</string>
+    <string name="info_dino_button">Lihat Dino</string>
+    <string name="info_dino_name">Nama </string>
+    <string name="info_dino_image">Image </string>
+    <string name="info_dino_deskripsi">Deskripsi </string>
+    <string name="info_dino_karakteristik">Karakteristik </string>
+    <string name="info_dino_kelompok">Kelompok </string>
+    <string name="info_dino_habitat">Habitat </string>
+    <string name="info_dino_makanan">Makanan </string>
+    <string name="info_dino_panjang">Panjang </string>
+    <string name="info_dino_tinggi">Tinggi </string>
+    <string name="info_dino_bobot">Bobot </string>
+    <string name="info_dino_kelemahan">Kelemahan </string>
+    <string name="nama_user">Robert Aritonang</string>
+    <string name="NIM">11S21024</string>
+    <string name="prodi_user">S1 Informatika</string>
 
 
     <string-array name="nama_dino_family">
@@ -101,42 +115,229 @@
     </string-array>
 
 
-    <string-array name="nama_Theropoda">
-        <item>Tyrannosaurus</item>
-        <item>Velociraptor</item>
-    </string-array>
-    <string-array name="deskripsi_Theropoda">
-        <item> Salah satu dinosaurus karnivora terbesar dan paling terkenal, dengan rahang besar dan gigi tajam.</item>
-        <item> Dinosaurus theropoda yang kecil dan lincah, dengan cakar yang mematikan dan otak yang cerdas.</item>
-    </string-array>
-    <string-array name="kelompok_Theropoda">
-        <item>Theropoda</item>
-        <item>Theropoda</item>
-    </string-array>
-    <string-array name="habitat_Theropoda">
-        <item> Biasanya ditemukan di dataran datar dan hutan tropis.</item>
-        <item>Umumnya ditemukan di dataran rendah dan hutan terbuka.</item>
-    </string-array>
-    <string-array name="makanan_Theropoda">
-        <item>Karnivora, memakan hewan-hewan besar seperti Triceratops dan hadrosaur.</item>
-        <item> Karnivora, memburu mangsa dalam kelompok kecil.</item>
-    </string-array>
-    <string-array name="panjang_Theropoda">
-        <item>Sekitar 12-13 meter.</item>
-        <item>Sekitar 2 meter.</item>
-    </string-array>
-    <string-array name="tinggi_Theropoda">
-        <item>Sekitar 4-6 meter.</item>
-        <item>Sekitar 0.5 meter.</item>
-    </string-array>
-    <string-array name="bobot_Theropoda">
-        <item>Sekitar 7-9 ton.</item>
-        <item>Sekitar 15-20 kilogram.</item>
-    </string-array>
-    <string-array name="kelemahan_Theropoda">
-        <item>Kecepatan berlari yang terbatas, mungkin rentan terhadap serangan dari jarak jauh.</item>
-        <item>Ukuran tubuh yang kecil dapat membuatnya rentan terhadap serangan dinosaurus yang lebih besar.</item>
+    <string-array name="start_dino_array">
+        <item>0</item>
+        <item>2</item>
+        <item>4</item>
+        <item>6</item>
+        <item>8</item>
+        <item>10</item>
+        <item>12</item>
+        <item>14</item>
     </string-array>
 
+    <string-array name="end_dino_array">
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+        <item>7</item>
+        <item>9</item>
+        <item>11</item>
+        <item>13</item>
+        <item>15</item>
+    </string-array>
+
+
+    <string-array name="nama_Dino">
+        <item>Tyrannosaurus</item>
+        <item>Velociraptor</item>
+        <item>Brachiosaurus</item>
+        <item>Diplodocus</item>
+        <item>Parasaurolophus</item>
+        <item>Iguanodon</item>
+        <item>Stegosaurus</item>
+        <item>Kentrosaurus</item>
+        <item>Ankylosaurus</item>
+        <item>Euoplocephalus</item>
+        <item>Triceratops</item>
+        <item>Styracosaurus</item>
+        <item>Pteranodon</item>
+        <item>Quetzalcoatlus</item>
+        <item>Parasaurolophus</item>
+        <item>Edmontosaurus</item>
+    </string-array>
+
+
+    <string-array name="image_dino">
+        <item>@drawable/tyrannosaurus</item>
+        <item>@drawable/velociraptor</item>
+        <item>@drawable/brachiosaurus</item>
+        <item>@drawable/diplodocus</item>
+        <item>@drawable/parasaurolophus</item>
+        <item>@drawable/iguanodon</item>
+        <item>@drawable/stegosaurus</item>
+        <item>@drawable/kentrosaurus</item>
+        <item>@drawable/ankylosaurus</item>
+        <item>@drawable/euoplocephalus</item>
+        <item>@drawable/triceratops</item>
+        <item>@drawable/styracosaurus</item>
+        <item>@drawable/pteranodon</item>
+        <item>@drawable/quetzalcoatlus</item>
+        <item>@drawable/parasaurolophus</item>
+        <item>@drawable/edmontosaurus</item>
+    </string-array>
+
+    <string-array name="deskripsi_Dino">
+        <item>Salah satu dinosaurus karnivora terbesar dan paling terkenal, dengan rahang besar dan gigi tajam.</item>
+        <item>Dinosaurus theropoda yang kecil dan lincah, dengan cakar yang mematikan dan otak yang cerdas.</item>
+        <item>Brachiosaurus adalah dinosaurus herbivora raksasa dengan leher panjang dan kaki yang tinggi. Hidup pada periode Jura Awal.</item>
+        <item>Diplodocus adalah dinosaurus herbivora yang memiliki tubuh panjang dan ekor yang panjang pula. Hidup pada periode Jura Tengah hingga Akhir.</item>
+        <item>Parasaurolophus adalah dinosaurus herbivora yang memiliki tubuh besar dengan crested yang khas di atas kepalanya. Hidup pada periode Kapur Akhir.</item>
+        <item>Iguanodon adalah dinosaurus herbivora berukuran sedang dengan ciri khas cakar yang besar pada jari-jari depannya. Hidup pada periode Kapur Awal hingga Tengah.</item>
+        <item>Stegosaurus adalah dinosaurus herbivora dengan ciri khas punggung yang dilapisi oleh lempengan dan duri. Hidup pada periode Jura Akhir.</item>
+        <item>Kentrosaurus adalah dinosaurus herbivora berukuran sedang dengan duri besar di bagian punggungnya. Hidup pada periode Jura Akhir.</item>
+        <item>Ankylosaurus adalah dinosaurus herbivora berlapis lapis yang dilengkapi dengan duri besar di punggung dan ekornya. Hidup pada periode Kapur Akhir.</item>
+        <item>Euoplocephalus adalah dinosaurus herbivora berlapis lapis yang memiliki cangkang tulang dan duri yang besar di bagian punggung dan sisi tubuhnya. Hidup pada periode Kapur Akhir.</item>
+        <item>Triceratops adalah dinosaurus herbivora yang terkenal dengan tiga tanduk besar di kepala dan bony frill di bagian belakangnya. Hidup pada periode Kapur Akhir.</item>
+        <item>Styracosaurus adalah dinosaurus herbivora yang memiliki tanduk dan tanduk di atas kepala yang mencolok, serta bony frill yang menonjol di bagian belakang kepala. Hidup pada periode Kapur Akhir.</item>
+        <item>Pteranodon adalah reptil terbang besar yang memiliki sayap yang besar dan tengkorak yang ringan. Hidup pada periode Kapur Akhir.</item>
+        <item>Quetzalcoatlus adalah pterosaur raksasa yang merupakan salah satu reptil terbang terbesar yang pernah ada. Hidup pada periode Kapur Akhir.</item>
+        <item>Parasaurolophus adalah dinosaurus herbivora dengan tubuh besar dan ciri khas crested panjang di kepala. Hidup pada periode Kapur Akhir.</item>
+        <item>Edmontosaurus adalah dinosaurus herbivora dengan tubuh besar dan moncong yang lebar. Hidup pada periode Kapur Akhir.</item>
+    </string-array>
+    <string-array name="karakteristik_Dino">
+        <item>Tubuh besar dengan kepala besar, cakar tajam, dan gigi yang besar dan kuat. Dikenal sebagai salah satu predator terbesar di daratan.</item>
+        <item>Tubuh kecil hingga sedang dengan cakar yang tajam dan kaki yang kokoh untuk berlari.</item>
+        <item>Tubuh sangat besar dengan leher panjang yang memungkinkannya mencapai daun-daun pohon tinggi. Kaki panjang mendukung tubuh yang besar.</item>
+        <item>Tubuh sangat panjang dengan leher dan ekor yang ekstrem panjang. Kaki yang tinggi memungkinkannya mencapai tumbuhan yang tinggi.</item>
+        <item>ubuh berukuran sedang dengan leher panjang, kaki yang kuat, dan crested khas yang menonjol di kepala.</item>
+        <item>Tubuh berukuran sedang dengan cakar besar di depan kaki, leher yang relatif panjang, dan ekor yang kuat.</item>
+        <item>Tubuh besar dengan punggung yang dilapisi oleh lempengan tulang dan duri besar di ekor. Kepala kecil dan gigi kecil.</item>
+        <item>Tubuh berukuran sedang dengan duri besar di bagian punggung dan ekor. Kepala kecil dan kaki yang kuat.</item>
+        <item>Tubuh besar dengan lapisan tulang dan duri yang melindungi tubuh. Ekornya dilengkapi dengan gada yang keras.</item>
+        <item>Tubuh besar dengan cangkang tulang yang melindungi tubuh dari predator. Duri besar di bagian punggung, ekor bercabang, dan club di ujung ekor.</item>
+        <item>Tubuh besar dengan kepala besar yang dilengkapi dengan tiga tanduk besar di atasnya. Bony frill besar di bagian belakang kepala.</item>
+        <item>Tubuh berukuran sedang dengan kepala yang dilengkapi dengan tanduk yang besar dan tanduk panjang di atas hidung. Bony frill dengan taji di bagian belakang kepala.</item>
+        <item>ubuh besar dengan sayap yang lebar dan tengkorak yang ringan. Terbang menggunakan sayap yang terbuat dari membran kulit.</item>
+        <item>Tubuh besar dengan sayap yang sangat lebar dan tengkorak yang ringan. Salah satu hewan terbesar yang pernah terbang.</item>
+        <item>Tubuh besar dengan leher panjang dan crested yang panjang di kepala. Dikenal karena suara panggilan yang unik.</item>
+        <item>Tubuh besar dengan moncong yang lebar dan gigi yang cocok untuk mengunyah tumbuhan. Dikenal karena ukuran tubuhnya yang besar.</item>
+    </string-array>
+    <string-array name="kelompok_Dino">
+        <item>Theropoda</item>
+        <item>Theropoda</item>
+        <item>Sauropodomorpha</item>
+        <item>Sauropodomorpha</item>
+        <item>Ornithopoda</item>
+        <item>Ornithopoda</item>
+        <item>Stegosauria</item>
+        <item>Stegosauria</item>
+        <item>Ankylosauria</item>
+        <item>Ankylosauria</item>
+        <item>Ceratopsia</item>
+        <item>Ceratopsia</item>
+        <item>Pterosauria</item>
+        <item>Pterosauria</item>
+        <item>Hadrosauridae</item>
+        <item>Hadrosauridae</item>
+    </string-array>
+    <string-array name="habitat_Dino">
+        <item>Umumnya ditemukan di dataran datar dan hutan tropis.</item>
+        <item>Umumnya ditemukan di dataran rendah dan hutan terbuka.</item>
+        <item>Umumnya ditemukan di daerah berawa atau daerah hutan tropis yang lebat.</item>
+        <item>Umumnya ditemukan di dataran tinggi dan daerah padang rumput terbuka.</item>
+        <item>Umumnya ditemukan di daerah dataran rendah dan rawa-rawa.</item>
+        <item>Umumnya ditemukan di hutan dan daerah dataran rendah.</item>
+        <item>Umumnya ditemukan di daerah dataran rendah atau hutan terbuka.</item>
+        <item>Umumnya ditemukan di daerah dataran rendah atau hutan terbuka.</item>
+        <item>Umumnya ditemukan di daerah dataran rendah atau hutan terbuka.</item>
+        <item>Umumnya ditemukan di daerah dataran rendah atau hutan terbuka.</item>
+        <item>Umumnya ditemukan di dataran rendah, hutan terbuka, dan dataran banjir.</item>
+        <item>Umumnya ditemukan di dataran rendah, hutan terbuka, dan dataran banjir.</item>
+        <item>Umumnya ditemukan di daerah pesisir dan perairan terbuka.</item>
+        <item>Umumnya ditemukan di daerah pesisir dan dataran terbuka.</item>
+        <item>Umumnya ditemukan di dataran rendah, hutan, dan daerah sungai.</item>
+        <item>Umumnya ditemukan di dataran rendah, hutan, dan daerah sungai.</item>
+    </string-array>
+    <string-array name="makanan_Dino">
+        <item>Karnivora, memakan hewan-hewan besar seperti Triceratops dan hadrosaur.</item>
+        <item>Karnivora, memburu mangsa dalam kelompok kecil.</item>
+        <item>Herbivora, memakan tanaman tinggi seperti pucuk pohon dan tumbuhan semak.</item>
+        <item>Herbivora, memakan tanaman tinggi seperti pucuk pohon dan tanaman semak.</item>
+        <item>Herbivora, memakan berbagai jenis tanaman dan tumbuhan rendah.</item>
+        <item>Herbivora, memakan berbagai jenis tanaman dan tumbuhan rendah.</item>
+        <item>Herbivora, memakan tumbuhan rendah seperti paku-pakuan dan semak belukar.</item>
+        <item>Herbivora, memakan tumbuhan rendah seperti paku-pakuan dan semak belukar.</item>
+        <item>Herbivora, memakan tanaman rendah seperti semak belukar dan paku-pakuan.</item>
+        <item>Herbivora, memakan tanaman rendah seperti semak belukar, paku-pakuan, dan tumbuhan lainnya.</item>
+        <item>Herbivora, memakan tumbuhan rendah seperti semak belukar, paku-pakuan, dan tumbuhan lainnya.</item>
+        <item>Herbivora, memakan tumbuhan rendah seperti semak belukar, paku-pakuan, dan tumbuhan lainnya.</item>
+        <item>Karnivora, memangsa ikan dan hewan laut kecil lainnya.</item>
+        <item>Karnivora, memangsa ikan dan hewan kecil lainnya.</item>
+        <item>Herbivora, memakan tanaman rendah seperti semak belukar, paku-pakuan, dan tumbuhan lainnya.</item>
+        <item>Herbivora, memakan tanaman rendah seperti semak belukar, paku-pakuan, dan tumbuhan lainnya.</item>
+    </string-array>
+    <string-array name="panjang_Dino">
+        <item>Sekitar 12-13 meter.</item>
+        <item>Sekitar 2 meter.</item>
+        <item>Sekitar 22-25 meter</item>
+        <item>Sekitar 25-30 meter.</item>
+        <item>Sekitar 9-10 meter.</item>
+        <item>Sekitar 7-10 meter.</item>
+        <item>Sekitar 9-10 meter.</item>
+        <item>Sekitar 5-6 meter.</item>
+        <item>Sekitar 6-8 meter.</item>
+        <item>Sekitar 6-7 meter.</item>
+        <item>Sekitar 8-9 meter.</item>
+        <item>Sekitar 5-6 meter.</item>
+        <item>Sekitar 6-9 meter.</item>
+        <item>Sekitar 10-11 meter.</item>
+        <item>Sekitar 9-10 meter.</item>
+        <item>Sekitar 12-13 meter.</item>
+    </string-array>
+    <string-array name="tinggi_Dino">
+        <item>Sekitar 4-6 meter.</item>
+        <item>Sekitar 0.5 meter.</item>
+        <item>Sekitar 13-15 meter.</item>
+        <item>Sekitar 25-30 meter.</item>
+        <item>Sekitar 3-4 meter.</item>
+        <item>Sekitar 4-5 meter.</item>
+        <item>Sekitar 4-5 meter.</item>
+        <item>Sekitar 2-3 meter.</item>
+        <item>Sekitar 1,5-2 meter.</item>
+        <item>Sekitar 1,5-2 meter.</item>
+        <item>Sekitar 3-4 meter.</item>
+        <item>Sekitar 2-3 meter.</item>
+        <item>Sekitar 1-2 meter.</item>
+        <item>Sekitar 2-3 meter.</item>
+        <item>Sekitar 4-5 meter.</item>
+        <item>Sekitar 4-5 meter.</item>
+    </string-array>
+    <string-array name="bobot_Dino">
+        <item>Sekitar 7-9 ton.</item>
+        <item>Sekitar 15-20 kilogram.</item>
+        <item>Diperkirakan antara 30 hingga 60 ton.</item>
+        <item>Diperkirakan antara 10 hingga 15 ton.</item>
+        <item>Diperkirakan antara 2 hingga 3 ton.</item>
+        <item>Diperkirakan antara 3 hingga 4 ton.</item>
+        <item>Diperkirakan antara 4 hingga 6 ton.</item>
+        <item>Diperkirakan antara 1 hingga 2 ton.</item>
+        <item>Diperkirakan antara 4 hingga 6 ton.</item>
+        <item>Diperkirakan antara 2 hingga 3 ton.</item>
+        <item>Diperkirakan antara 6 hingga 12 ton.</item>
+        <item>Diperkirakan antara 2 hingga 3 ton.</item>
+        <item>Diperkirakan antara 20 hingga 50 kilogram.</item>
+        <item>Diperkirakan antara 200 hingga 250 kilogram.</item>
+        <item>Diperkirakan antara 2 hingga 3 ton.</item>
+        <item>Diperkirakan antara 3 hingga 4 ton.</item>
+    </string-array>
+    <string-array name="kelemahan_Dino">
+        <item>Kecepatan berlari yang terbatas, mungkin rentan terhadap serangan dari jarak jauh.</item>
+        <item>Ukuran tubuh yang kecil dapat membuatnya rentan terhadap serangan dinosaurus yang lebih besar.</item>
+        <item>Rentan terhadap predator saat mencari makan karena ukuran tubuhnya yang besar.</item>
+        <item>Ukuran tubuh yang besar dan panjang.</item>
+        <item>Ukuran tubuhnya yang besar, dan crestednya dapat menjadi sasaran dalam pertarungan.</item>
+        <item>Ukuran tubuhnya yang besar, dan cakarnya mungkin kurang efektif dalam pertahanan terhadap serangan.</item>
+        <item>Gerakan lambat dan perlindungan punggung yang terbatas.</item>
+        <item>Perlindungan punggung yang terbatas dan gerakan yang relatif lambat.</item>
+        <item>Gerakan yang lambat dan sulit untuk menjangkau daun-daun tinggi. Meskipun memiliki perlindungan yang kuat, mungkin rentan terhadap serangan dari bagian tubuh yang tidak dilindungi.</item>
+        <item>Meskipun memiliki perlindungan yang kuat, mungkin rentan terhadap serangan predator yang lebih besar dan gesit.</item>
+        <item>Meskipun memiliki tanduk besar yang digunakan untuk bertahan dari predator, Triceratops mungkin rentan terhadap serangan predator yang lebih besar atau lebih gesit.</item>
+        <item>Meskipun memiliki struktur bertahan yang kuat, mungkin rentan terhadap serangan predator yang lebih besar atau lebih gesit.</item>
+        <item>Meskipun mampu terbang, Pteranodon mungkin rentan terhadap predator di daratan atau dalam air saat mendarat untuk mencari makan.</item>
+        <item>Meskipun memiliki ukuran tubuh yang besar, Quetzalcoatlus mungkin rentan terhadap predator di daratan saat mendarat untuk mencari makan.</item>
+        <item>Meskipun memiliki ukuran tubuh yang besar, Parasaurolophus mungkin rentan terhadap predator karena gerakan yang lambat.</item>
+        <item>Meskipun memiliki ukuran tubuh yang besar, Edmontosaurus mungkin rentan terhadap predator karena gerakan yang lambat.</item>
+    </string-array>
 
 </resources>

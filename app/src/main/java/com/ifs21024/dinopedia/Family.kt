@@ -1,4 +1,5 @@
 package com.ifs21024.dinopedia
+
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
 
@@ -12,4 +13,7 @@ data class Family(
     var habitat: String,
     var perilaku: String,
     var klasifikasi: String,
+    var startIndex: Int,
+    var endIndex: Int,
+
 ) : Parcelable

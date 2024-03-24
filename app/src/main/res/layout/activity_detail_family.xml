@@ -186,11 +186,11 @@
             app:layout_constraintTop_toBottomOf="@+id/tvKlasifikasi" />
 
         <Button
-            android:id="@+id/buttonDetail"
+            android:id="@+id/buttonDino"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:text="@string/info_thero_button"
+            android:text="@string/info_dino_button"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvDetailKlasifikasi" />

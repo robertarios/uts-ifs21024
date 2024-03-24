@@ -6,39 +6,56 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:contentDescription="@string/app_name"
-    tools:context=".TheroDetailActivity">
+    tools:context=".DetailActivity">
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingBottom="50dp">
 
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:navigationIcon="@drawable/ic_arrow_back"
+                app:title="Detail Family"
+                app:titleTextColor="#ffffff" />
+        </com.google.android.material.appbar.AppBarLayout>
+
         <ImageView
-            android:id="@+id/ivDetailImageT"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_marginTop="16dp"
+            android:id="@+id/ivDetailImage"
+            android:layout_width="0dp"
+            android:layout_height="220dp"
+            android:layout_marginTop="10dp"
             android:contentDescription="@string/info_image_family"
             android:src="@drawable/hadro_family"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="ImageContrastCheck" />
+            app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
 
         <TextView
-            android:id="@+id/tvDetailNameT"
+            android:id="@+id/tvDetailName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:text="@string/info_name_family"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf= "@+id/ivDetailImageT" />
+            app:layout_constraintTop_toBottomOf="@+id/ivDetailImage" />
 
 
         <TextView
-            android:id="@+id/tvDeskripsiT"
+            android:id="@+id/tvDeskripsi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -47,10 +64,10 @@
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvDetailNameT" />
+            app:layout_constraintTop_toBottomOf="@+id/tvDetailName" />
 
         <TextView
-            android:id="@+id/tvDetailDeskripsiT"
+            android:id="@+id/tvDetailDeskripsi"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -59,7 +76,31 @@
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvDeskripsiT" />
+            app:layout_constraintTop_toBottomOf="@+id/tvDeskripsi" />
+
+        <TextView
+            android:id="@+id/tvPeriode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/info_periode_family"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDetailDeskripsi" />
+
+        <TextView
+            android:id="@+id/tvDetailPeriode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/info_periode_family"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPeriode" />
 
         <TextView
             android:id="@+id/tvKarakteristik"
@@ -67,11 +108,11 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
-            android:text="@string/info_periode_family"
+            android:text="@string/info_karakteristik_family"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvDetailDeskripsiT" />
+            app:layout_constraintTop_toBottomOf="@+id/tvDetailPeriode" />
 
         <TextView
             android:id="@+id/tvDetailKarakteristik"
@@ -79,51 +120,27 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:text="@string/info_periode_family"
+            android:text="@string/info_karakteristik_family"
+            android:textAlignment="textStart"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvKarakteristik" />
 
         <TextView
-            android:id="@+id/tvKelompok"
+            android:id="@+id/tvHabitat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
-            android:text="@string/info_karakteristik_family"
+            android:text="@string/info_habitat_family"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvDetailKarakteristik" />
 
         <TextView
-            android:id="@+id/tvDetailKelompok"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:text="@string/info_karakteristik_family"
-            android:textAlignment="textStart"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvKelompok" />
-
-        <TextView
-            android:id="@+id/tvHabitatT"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="24dp"
-            android:text="@string/info_habitat_family"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvDetailKelompok" />
-
-        <TextView
-            android:id="@+id/tvDetailHabitatT"
+            android:id="@+id/tvDetailHabitat"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -133,10 +150,10 @@
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvHabitatT" />
+            app:layout_constraintTop_toBottomOf="@+id/tvHabitat" />
 
         <TextView
-            android:id="@+id/tvMakanan"
+            android:id="@+id/tvPerilaku"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -145,10 +162,10 @@
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvDetailHabitatT" />
+            app:layout_constraintTop_toBottomOf="@+id/tvDetailHabitat" />
 
         <TextView
-            android:id="@+id/tvDetailMakanan"
+            android:id="@+id/tvDetailPerilaku"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -158,10 +175,10 @@
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvMakanan" />
+            app:layout_constraintTop_toBottomOf="@+id/tvPerilaku" />
 
         <TextView
-            android:id="@+id/tvPanjang"
+            android:id="@+id/tvKlasifikasi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -170,10 +187,10 @@
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvDetailMakanan" />
+            app:layout_constraintTop_toBottomOf="@+id/tvDetailPerilaku" />
 
         <TextView
-            android:id="@+id/tvDetailPanjang"
+            android:id="@+id/tvDetailKlasifikasi"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -183,91 +200,19 @@
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvPanjang" />
-
-        <TextView
-            android:id="@+id/tvTinggi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="24dp"
-            android:text="@string/info_klasifikasi_family"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvDetailMakanan" />
-
-        <TextView
-            android:id="@+id/tvDetailTinggi"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:text="@string/info_karakteristik_family"
-            android:textAlignment="textStart"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvTinggi" />
-
-        <TextView
-            android:id="@+id/tvBobot"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="24dp"
-            android:text="@string/info_klasifikasi_family"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvDetailPanjang" />
-
-        <TextView
-            android:id="@+id/tvDetailBobot"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:text="@string/info_karakteristik_family"
-            android:textAlignment="textStart"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvBobot" />
-
-        <TextView
-            android:id="@+id/tvKelemahan"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="24dp"
-            android:text="@string/info_klasifikasi_family"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvDetailBobot" />
-
-        <TextView
-            android:id="@+id/tvDetailKelemahan"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:text="@string/info_karakteristik_family"
-            android:textAlignment="textStart"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvKelemahan" />
+            app:layout_constraintTop_toBottomOf="@+id/tvKlasifikasi" />
 
         <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
+            android:id="@+id/buttonDino"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Button"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/info_dino_button"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvDetailKelemahan" />
+            app:layout_constraintTop_toBottomOf="@+id/tvDetailKlasifikasi" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,6 +4,8 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.content.res.Configuration
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -18,6 +20,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        setSupportActionBar(binding.toolbar) // Atur toolbar sebagai action bar
+
+        supportActionBar?.apply {
+            title = "Daftar Family" // Atur judul pada app bar
+        }
 
         binding.rvFamily.setHasFixedSize(false)
         dataFamily.addAll(getListFamily())
@@ -34,13 +42,15 @@ class MainActivity : AppCompatActivity() {
         val dataHabitat = resources.getStringArray(R.array.habitat_dino_family)
         val dataPerilaku = resources.getStringArray(R.array.perilaku_dino_family)
         val dataKlasifikasi = resources.getStringArray(R.array.klasifikasi_dino_family)
+        val startIndex = resources.getStringArray(R.array.start_dino_array)
+        val endIndex = resources.getStringArray(R.array.end_dino_array)
 
         val listFamily = ArrayList<Family>()
         for (i in dataName.indices) {
             val family = Family(dataName[i],
                 dataImage.getResourceId(i, -1), dataDescription[i],
-                dataPeriode[i], dataHabitat[i], dataKarakteristik[i], dataHabitat[i],
-                dataPerilaku[i])
+                dataPeriode[i], dataKarakteristik[i], dataHabitat[i],
+                dataPerilaku[i], dataKlasifikasi[i], startIndex[i].toInt(), endIndex[i].toInt())
             listFamily.add(family)
         }
         return listFamily
@@ -68,8 +78,24 @@ class MainActivity : AppCompatActivity() {
 
     private fun showSelectedFamily(family: Family) {
         val intentWithData = Intent(this@MainActivity,
-            DetailFamilyActivity::class.java)
-        intentWithData.putExtra(DetailFamilyActivity.EXTRA_FAMILY, family)
+            DetailActivity::class.java)
+        intentWithData.putExtra(DetailActivity.EXTRA_FAMILY, family)
         startActivity(intentWithData)
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_main,menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId){
+            R.id.menu_about -> {
+                val intent = Intent(this, UserDetail::class.java)
+                startActivity(intent)
+                return true
+            }
+        }
+        return super.onOptionsItemSelected(item)
     }
 }

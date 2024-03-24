@@ -16,20 +16,20 @@
 
 
         <ImageView
-            android:id="@+id/ivItemThero"
+            android:id="@+id/ivItemDino"
             android:layout_width="100dp"
             android:layout_height="100dp"
             app:srcCompat="@drawable/anky_family"
             tools:ignore="ImageContrastCheck" />
 
         <TextView
-            android:id="@+id/tvItemThero"
+            android:id="@+id/tvItemDino"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_marginStart="10dp"
             android:layout_weight="1"
             android:gravity="center_vertical"
-            android:text="@string/info_name_family"
+            android:text="@string/info_dino_name"
             android:textSize="34sp"
             android:textStyle="bold" />
     </LinearLayout>
